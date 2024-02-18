@@ -1,5 +1,7 @@
 package greeters
 
+import "fmt"
+
 const (
 	Indonesia     = "INA"
 	UnitedStates  = "US"
@@ -7,14 +9,14 @@ const (
 	Spain         = "ES"
 )
 
-var Greeters = map[string]func(){
-	Indonesia: func() {
-		println("Halo 🇮🇩")
+var Greeters = map[string]func(value string){
+	Indonesia: func(value string) {
+		fmt.Printf("Halo %s dari 🇮🇩", value)
 	},
-	UnitedStates: func() {
-		println("Hello 🇺🇸")
+	UnitedStates: func(value string) {
+		fmt.Printf("Hello %s from 🇺🇸", value)
 	},
-	Spain: func() {
-		println("Hola 🇪🇸")
+	Spain: func(value string) {
+		fmt.Printf("Hola %s desde 🇪🇸", value)
 	},
 }
