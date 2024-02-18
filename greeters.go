@@ -11,12 +11,12 @@ const (
 
 var Greeters = map[string]func(value string){
 	Indonesia: func(value string) {
-		fmt.Printf("Halo %s dari 🇮🇩", value)
+		fmt.Printf("Halo %s dari 🇮🇩\n", value)
 	},
 	UnitedStates: func(value string) {
-		fmt.Printf("Hello %s from 🇺🇸", value)
+		fmt.Printf("Hello %s from 🇺🇸\n", value)
 	},
 	Spain: func(value string) {
-		fmt.Printf("Hola %s desde 🇪🇸", value)
+		fmt.Printf("Hola %s desde 🇪🇸\n", value)
 	},
 }
