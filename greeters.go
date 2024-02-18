@@ -1,10 +1,20 @@
 package greeters
 
+const (
+	Indonesia     = "INA"
+	UnitedStates  = "US"
+	UnitedKingdom = "UK"
+	Spain         = "ES"
+)
+
 var Greeters = map[string]func(){
-	"INA": func() {
+	Indonesia: func() {
 		println("Halo 🇮🇩")
 	},
-	"US": func() {
+	UnitedStates: func() {
 		println("Hello 🇺🇸")
+	},
+	Spain: func() {
+		println("Hola 🇪🇸")
 	},
 }
